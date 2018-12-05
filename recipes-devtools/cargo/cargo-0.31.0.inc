@@ -1,7 +1,7 @@
 CARGO_SNAPSHOT = "cargo-0.31.0-${BUILD_ARCH}-unknown-linux-gnu"
 
-SRC_URI[cargo-snapshot-x86_64.md5sum] = "b3229879d93765ebbd0520f309ad26eb"
-SRC_URI[cargo-snapshot-x86_64.sha256sum] = "fe03acbd158d680bbdd8009b242b5ee49a7deab129345ce9c539d7c523c22db0"
+SRC_URI[cargo-snapshot-x86_64.md5sum] = "bad665c07e73a3f3cfa7ec3b209737fc"
+SRC_URI[cargo-snapshot-x86_64.sha256sum] = "bfbabba9a2c1717fe1ce68469ce2de7b4b94e44e6a165d50b77de7bf7515bdb6"
 
 SRC_URI += "\
     https://static.rust-lang.org/dist/${CARGO_SNAPSHOT}.tar.gz;name=cargo-snapshot-${BUILD_ARCH} \
