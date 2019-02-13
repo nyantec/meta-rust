@@ -158,7 +158,7 @@ crate://crates.io/winapi-util/0.1.1 \
 crate://crates.io/winapi-x86_64-pc-windows-gnu/0.4.0 \
 crate://crates.io/winapi/0.2.8 \
 crate://crates.io/winapi/0.3.6 \
-crate://crates.io/wincolor/0.1.6 \
+crate://crates.io/wincolor/1.0.1 \
 "
 
 
