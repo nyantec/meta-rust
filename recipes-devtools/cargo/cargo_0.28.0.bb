@@ -7,8 +7,8 @@ inherit cargo
 
 # how to get cargo could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/cargo/0.28.0"
-SRC_URI += "git://github.com/rust-lang/cargo.git;protocol=https;branch=rust-1.27.0"
-SRCREV = "1e95190e5ffd6e6b701ad87dab4671246b96a9ce"
+SRC_URI += "git://github.com/rust-lang/cargo.git;protocol=https;branch=rust-1.28.0"
+SRCREV = "96a2c7d16249cb47c61c887fc95ca8be60e7ef0a"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR=""
 
