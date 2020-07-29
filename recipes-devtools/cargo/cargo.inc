@@ -33,7 +33,7 @@ do_install () {
 }
 
 # Needed for pkg-config to be used
-export LIBGIT2_SYS_USE_PKG_CONFIG = "1"
+# export LIBGIT2_SYS_USE_PKG_CONFIG = "1"
 export LIBSSH2_SYS_USE_PKG_CONFIG = "1"
 
 BBCLASSEXTEND = "native"
