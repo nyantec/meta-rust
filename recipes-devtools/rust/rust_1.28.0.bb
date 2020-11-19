@@ -2,6 +2,9 @@ require rust.inc
 require rust-source-${PV}.inc
 require rust-snapshot-${PV}.inc
 
+HANDSOFFCRATESIO = "yes"
+CARGO_EXTRA_FLAGS = "--offline"
+
 # These are extracted from rustc/src/bootstrap/Cargo.toml via cargo-bitbake
 SRC_URI += " \
 crate://crates.io/aho-corasick/0.6.4 \

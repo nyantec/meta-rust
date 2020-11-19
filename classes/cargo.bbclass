@@ -24,7 +24,7 @@ export RUST_BACKTRACE = "1"
 
 RUSTFLAGS ??= ""
 BUILD_MODE = "${@['--release', ''][d.getVar('DEBUG_BUILD') == '1']}"
-CARGO_BUILD_FLAGS = "-v --target ${HOST_SYS} ${BUILD_MODE}"
+CARGO_BUILD_FLAGS = "-v ${CARGO_EXTRA_FLAGS} --target ${HOST_SYS} ${BUILD_MODE}"
 
 # This is based on the content of CARGO_BUILD_FLAGS and generally will need to
 # change if CARGO_BUILD_FLAGS changes.

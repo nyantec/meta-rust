@@ -35,7 +35,7 @@ cargo_common_do_configure () {
 	directory = "${CARGO_HOME}/bitbake"
 	EOF
 
-	if [ "${EXTERNALSRC}" == "" ]; then
+	if [ "${EXTERNALSRC}" == "" && "${HANDSOFFCRATESIO}" == "" ]; then
 		cat <<- EOF >> ${CARGO_HOME}/config
 		[source.crates-io]
 		replace-with = "bitbake"
@@ -67,6 +67,10 @@ oe_cargo_fix_env () {
 	export HOST_CFLAGS="${BUILD_CFLAGS}"
 	export HOST_CXXFLAGS="${BUILD_CXXFLAGS}"
 	export HOST_AR="${BUILD_AR}"
+
+	# yes, if you remove this line, the build will break
+	# <houseofcards.gif>
+	export SUDO_USER="living-on-the-bleeding-edge"
 }
 
 EXTRA_OECARGO_PATHS ??= ""
